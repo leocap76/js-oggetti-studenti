@@ -43,4 +43,5 @@ for (var i = 0; i < 1; i++) {
   studenti.cognome = prompt("scrivi il tuo cognome");
   studenti.età = prompt("inserisci la tua età");
 }
+alert("benvenuto nella classe 22!!");
 console.log(studenti);
