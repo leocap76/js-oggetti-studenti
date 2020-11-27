@@ -13,35 +13,38 @@ var studenti = [
   {
     "nome" : "Leonardo",
     "cognome" : "Capogna",
-    "età" : 25,
+    "eta" : 25,
   },
   {
     "nome" : "Silvia",
     "cognome" : "Masci",
-    "età" : 23,
+    "eta" : 23,
   },
   {
     "nome" : "Alice",
     "cognome" : "De Angelis",
-    "età" : 26,
+    "eta" : 26,
   },
   {
     "nome" : "Lorenzo",
     "cognome" : "Corsetti",
-    "età" : 21,
+    "eta" : 21,
   },
 ];
 
 //stampa in console tutti gli studenti della lista
 for (var i = 0; i < studenti.length; i++) {
-  console.log(studenti[i].nome, studenti[i].cognome, studenti[i].età);
+  console.log(studenti[i].nome, studenti[i].cognome, studenti[i].eta);
 }
 
 //inserisci un nuovo studente
-for (var i = 0; i < 1; i++) {
-  studenti.nome = prompt("scrivi il tuo nome");
-  studenti.cognome = prompt("scrivi il tuo cognome");
-  studenti.età = prompt("inserisci la tua età");
-}
+var nuovoStudente ={};
+
+  nuovoStudente.nome = prompt("scrivi il tuo nome");
+  nuovoStudente.cognome = prompt("scrivi il tuo cognome");
+  nuovoStudente.eta = parseInt(prompt("inserisci la tua età"));
+
+ studenti.push(nuovoStudente);
+
 alert("benvenuto nella classe 22!!");
 console.log(studenti);
